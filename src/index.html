@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoPhone</title>
+
+  <!--Link Boostrap packagem-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+
+  <style>
+    video {
+      width: 100%;
+    }
+
+    .card-inicial {
+      position: relative;
+      margin-bottom: 10rem;
+    }
+
+    .text {
+      position: absolute;
+
+      left: 50%;
+      top: 75%;
+
+      transform: translate(-50%, -50%);
+    }
+
+    .text>h1 {
+      color: white;
+      text-align: center;
+    }
+
+    main {
+      min-width: 300px;
+      background-image: linear-gradient(to top, #61b6b2, rgb(7, 7, 7));
+    }
+
+    .card-descricao {
+      padding: 3rem;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid red;
+    }
+
+    .categoria {
+      color: white;
+    }
+
+    .categoria>p {
+      min-width: 200px;
+      max-width: 600px;
+    }
+
+
+
+    /* Main para baixo */
+
+    .swiper-slide {
+      background-color: white;
+      height: 300px;
+
+    }
+
+    .widthImg {
+      width: 175px;
+      height: 110px;
+    }
+
+    .widthImg>img {
+      width: 100%;
+    }
+
+
+    .swiper-wrapper {
+      margin: 0 0 .5rem 0;
+    }
+
+    .swiper-slide {
+      margin: 0 .5rem 0 .5rem;
+      border-radius: 0 30px 0 30px;
+    }
+
+    .card-categoria {
+      height: 500px;
+      padding: 3rem;
+      border: 1px solid green;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-categoria>h2 {
+      color: white;
+
+    }
+
+    .card-categoria>button {
+      width: 251px;
+      padding: 1rem;
+      margin: 0 auto;
+    }
+
+    .card-bateria {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card-img {
+      margin: 0 auto;
+      width: 300px;
+    }
+
+    .card-img>img {
+      width: 100%;
+    }
+
+    .card-bateria-text {
+      max-width: 400px;
+    }
+
+    .card-segundo-video {
+      width: 300px;
+    }
+
+    .card-braek{
+      width: 100%;
+    }
+    .card-braek > img{
+      width: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <menu>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </menu>
+  </header>
+  <main>
+    <section class="card-inicial">
+      <div class="text">
+        <h1>
+          Bem vindo ao futuro
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facere expedita optio veniam, voluptate alias
+          voluptatem dolorem deleniti eaque? Vitae iure, at molestias sapiente adipisci quisquam! Recusandae quam
+          praesentium amet.</p>
+      </div>
+      <div>
+        <video autoplay loop muted>
+          <source src="video/Meet Xiaomi 12S Ultra _ The New Era.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+
+    <section class="card-descricao">
+      <div class="categoria">
+        <h2>Nova tecnologia</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+          PageMaker including versions of Lorem Ipsum.
+
+          Why do we use it?
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+          opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+          packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+          will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+
+        </p>
+      </div>
+      <div><img src="img/EcoFone 2.png" alt=""></div>
+    </section>
+
+    <section class="card-braek">
+      <img src="img/foto.png" alt="">
+    </section>
+
+    <section class="card-categoria">
+      <h2>Informações</h2>
+
+      <div class="container-carrossel">
+        <div class="swiper">
+          <div id="carrosselInformacoes" class="swiper-wrapper d-flex">
+
+            <div class="swiper-slide">
+              <div class="widthImg">
+                <img src="img/EcoFone 2.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="widthImg">
+                <img src="img/EcoFone 2.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="widthImg">
+                <img src="img/EcoFone 2.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="widthImg">
+                <img src="img/EcoFone 2.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="widthImg">
+                <img src="img/EcoFone 2.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="widthImg">
+                <img src="img/EcoFone 2.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="widthImg">
+                <img src="img/EcoFone 2.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="widthImg">
+                <img src="img/EcoFone 2.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="widthImg">
+                <img src="img/EcoFone 2.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="widthImg">
+                <img src="img/EcoFone 2.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="widthImg">
+                <img src="img/EcoFone 2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-compra">Mostra mais</button>
+    </section>
+
+    <section class="card-braek">
+      <img src="img/xiaomi-12s-ultra-4.jpg" alt="">
+    </section>
+
+    <section class="">
+      <h2>Futuro</h2>
+
+      <div class="d-flex justify-content-evenly">
+        <div class="bateria">
+
+          <div class="card-segundo-video">
+            <video autoplay>
+              <source src="video/videoplayback.mp4">
+            </video>
+
+          </div>
+
+          <div class="card-bateria-text">
+            <h4>O que há por tras do eco fone?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quibusdam neque quo iusto ad ipsa
+              exercitationem, optio eos magni a doloremque? Hic officiis, cumque quidem dolorem totam maiores iste
+              culpa.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="bateria">
+          <div class="card-img"><img src="img/ecophone-inside.png" alt=""></div>
+          <div class="card-bateria-text">
+            <h4>O que há por tras do eco fone?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quibusdam neque quo iusto ad ipsa
+              exercitationem, optio eos magni a doloremque? Hic officiis, cumque quidem dolorem totam maiores iste
+              culpa.
+            </p>
+          </div>
+        </div>
+
+        <div class="bateria">
+          <div class="card-img"><img src="img/ecophone-inside.png" alt=""></div>
+          <div class="card-bateria-text">
+            <h4>O que há por tras do eco fone?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quibusdam neque quo iusto ad ipsa
+              exercitationem, optio eos magni a doloremque? Hic officiis, cumque quidem dolorem totam maiores iste
+              culpa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-braek">
+      <img src="img/xiaomi-12s-ultra-4.jpg" alt="">
+    </section>
+    
+    <section class="card-descricao">
+      <div>
+        <div>
+          <h2>Suporte Especial</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, a quidem voluptatem.</p>
+        </div>
+      </div>
+      <div><img src="img/EcoFone 2.png" alt=""></div>
+    </section>
+  </main>
+
+  <footer class="blog-footer">
+    <p>Desenvolvido pelo grupo do Legionarios Ecophone</p>
+  </footer>
+
+
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
