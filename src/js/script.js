@@ -1,12 +1,5 @@
 var pegarCarrossel = window.document.getElementById("carrosselInformacoes");
 
-
-function init() {
-    for(var i=0;i > carrosselInformacoesJson.length ; i++){
-        
-    }
-}
-
   const swiper = new Swiper('.swiper', {
      speed: 400,
      spaceBetween: 100,
@@ -48,7 +41,7 @@ function init() {
 
          },
          1200: {
-             slidesPerView: 6,
+             slidesPerView: 5,
 
          },
          1440: {
@@ -66,3 +59,18 @@ var carrosselInformacoesJson = [
 ];
 
 
+onload = init();
+
+function init() {
+    console.log(pegarCarrossel)
+    for(var i=0;i < carrosselInformacoesJson.length ; i++){
+        pegarCarrossel.innerHTML += `<div class="swiper-slide text-center">
+              <div class="widthImg">
+                <img src="img/EcoFone 2.png" alt="">
+                <h4>Test<br>
+                acessorios</h4>
+                <p>Acessorios que acompanham junto com a caixa do celuluar</p>
+              </div>
+            </div>`
+    };
+}

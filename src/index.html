@@ -12,48 +12,130 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 
 
 
 
   <style>
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+    :root {
+      --color-bg-site: linear-gradient(white, #2646af, black);
+      --color-fontes: white;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      position: absolute;
+      z-index: 2;
+      top: 5%;
+      left: 50%;
+      width: 85%;
+      transform: translate(-50%, -50%);
+    }
+
+    .bg-dark {
+      background-color: transparent !important;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--color-fontes);
+    }
+
+    main {
+      min-width: 300px;
+      background: var(--color-bg-site);
+    }
+
     video {
       width: 100%;
+      box-shadow: -2px 1px 4px black;
     }
 
     .card-inicial {
       position: relative;
-      margin-bottom: 10rem;
+      margin-bottom: 5rem;
     }
 
     .text {
       position: absolute;
-
       left: 50%;
       top: 75%;
-
       transform: translate(-50%, -50%);
     }
 
     .text>h1 {
       color: white;
       text-align: center;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
     }
 
-    main {
-      min-width: 300px;
-      background-image: linear-gradient(to top, #61b6b2, rgb(7, 7, 7));
+    .text>p {
+      color: white;
+      text-align: center;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
     }
 
+
+    .card-inova {
+      height: 100%;
+      box-shadow: 3px 2px 2px black;
+      padding: 3rem;
+    }
+
+    .card-inova>h2 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .card-inova>p {
+      margin-bottom: 2rem;
+      min-width: 400px;
+      max-width: 600px;
+      margin: 0 auto 4rem;
+    }
+
+    #projetor {
+      display: flex;
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      background-color: aliceblue;
+      padding: 5px;
+      margin: 0 auto;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .body-link {
+      width: 95px;
+      height: 95px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Main para baixo */
     .card-descricao {
       padding: 3rem;
       display: flex;
       justify-content: space-between;
-      border: 1px solid red;
     }
 
     .categoria {
-      color: white;
+      color: rgb(14, 13, 13);
     }
 
     .categoria>p {
@@ -62,36 +144,9 @@
     }
 
 
-
-    /* Main para baixo */
-
-    .swiper-slide {
-      background-color: white;
-      height: 300px;
-
-    }
-
-    .widthImg {
-      width: 175px;
-      height: 110px;
-    }
-
-    .widthImg>img {
-      width: 100%;
-    }
-
-
-    .swiper-wrapper {
-      margin: 0 0 .5rem 0;
-    }
-
-    .swiper-slide {
-      margin: 0 .5rem 0 .5rem;
-      border-radius: 0 30px 0 30px;
-    }
-
+    /* Carrossel */
     .card-categoria {
-      height: 500px;
+      height: 560px;
       padding: 3rem;
       border: 1px solid green;
       display: flex;
@@ -99,15 +154,55 @@
     }
 
     .card-categoria>h2 {
-      color: white;
+      color: rgb(10, 10, 10);
 
+    }
+
+    .swiper-slide {
+      margin: 0 .5rem 0 .5rem;
+      border-radius: 0 30px 0 30px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(15, 15, 15);
+      height: 300px;
+      margin-bottom: 2rem;
+    }
+    .swiper-wrapper {
+      margin: 0 0 .5rem 0;
+    }
+
+    .widthImg {
+      width: 100%;
+      height: 100%;
+      color: white;
+    }
+
+    .widthImg>img {
+      width: 100%;
+      border-radius: 0 60px 0 60px;
+      padding: .7rem 1rem .3rem;
+    }
+
+    .widthImg>h4{
+      font-weight: 500;
+    } 
+    
+    .widthImg>p {
+      font-weight: 100;
+      font-size: .8rem;
+      min-width: 50px;;
     }
 
     .card-categoria>button {
       width: 251px;
       padding: 1rem;
       margin: 0 auto;
+      border: none;
     }
+
+
+    
+
 
     .card-bateria {
       display: flex;
@@ -117,6 +212,7 @@
     .card-img {
       margin: 0 auto;
       width: 300px;
+
     }
 
     .card-img>img {
@@ -131,11 +227,18 @@
       width: 300px;
     }
 
-    .card-braek{
+    .card-braek {
       width: 100%;
     }
-    .card-braek > img{
+
+    .card-braek>img {
       width: 100%;
+    }
+
+    .col-md-4>i {
+      background-color: aliceblue;
+      border-radius: 50%;
+      padding: 1.5rem;
     }
   </style>
 
@@ -143,16 +246,32 @@
 
 <body>
   <header>
-    <menu>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </menu>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand me-4" href="#">Navbar</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-4">
+              <a class="nav-link active links-header" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link links-header" href="#">Link</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link links-header" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
+
   <main>
+    <!--Finalizado Big Video-->
     <section class="card-inicial">
       <div class="text">
         <h1>
@@ -162,41 +281,57 @@
           voluptatem dolorem deleniti eaque? Vitae iure, at molestias sapiente adipisci quisquam! Recusandae quam
           praesentium amet.</p>
       </div>
+
+      <video autoplay loop muted>
+        <source src="video/Meet Xiaomi 12S Ultra _ The New Era.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+
+    <!--Finalizado Novas tecnologias-->
+    <section class="card-inova text-center">
+      <h2>Nova tecnologia</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+      </p>
       <div>
-        <video autoplay loop muted>
-          <source src="video/Meet Xiaomi 12S Ultra _ The New Era.mp4" type="video/mp4" />
-        </video>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="body-link">
+              <i class="bi bi-droplet fs-2"></i>
+            </div>
+            <h4>A prova d'água</h4>
+            <p>Há uma saída para a projeto de video e imagens, dessa forma não dependendo mais de uma estrutura unica
+              para reproduzir, videos, filmes e apresentações, Lorem, ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="col-md-4">
+            <div id="projetor">
+              <i class="bi bi-camera2 fs-1"></i>
+              <i class="bi bi-projector fs-1"></i>
+            </div>
+            <h4>Projetor</h4>
+            <p>Há uma saída para a projeto de video e imagens, dessa forma não dependendo mais de uma estrutura unica
+              para reproduzir, videos, filmes e apresentações, Lorem, ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="col-md-4">
+            <div class="body-link">
+              <i class="bi bi-recycle fs-2"></i>
+            </div>
+
+            <h4>Biodegradavel</h4>
+            <p>A bateria é produzida com materias Biodegradaveis, Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Doloremque distinctio voluptatem dolor.</p>
+          </div>
+        </div>
       </div>
+
     </section>
 
-
-    <section class="card-descricao">
-      <div class="categoria">
-        <h2>Nova tecnologia</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-          PageMaker including versions of Lorem Ipsum.
-
-          Why do we use it?
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking
-          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-          opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
-          packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
-          will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
-          accident, sometimes on purpose (injected humour and the like).
-
-        </p>
-      </div>
-      <div><img src="img/EcoFone 2.png" alt=""></div>
-    </section>
-
+    <!--Desenvolver uma imagem -->
     <section class="card-braek">
       <img src="img/foto.png" alt="">
     </section>
 
+    <!--  -->
     <section class="card-categoria">
       <h2>Informações</h2>
 
@@ -204,76 +339,22 @@
         <div class="swiper">
           <div id="carrosselInformacoes" class="swiper-wrapper d-flex">
 
-            <div class="swiper-slide">
+            <div class="swiper-slide text-center">
               <div class="widthImg">
                 <img src="img/EcoFone 2.png" alt="">
+                <h4>Telefone &<br>
+                acessorios</h4>
+                <p>Acessorios que acompanham junto com a caixa do celuluar</p>
               </div>
             </div>
+            
 
-            <div class="swiper-slide">
-              <div class="widthImg">
-                <img src="img/EcoFone 2.png" alt="">
-              </div>
-            </div>
 
-            <div class="swiper-slide">
-              <div class="widthImg">
-                <img src="img/EcoFone 2.png" alt="">
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="widthImg">
-                <img src="img/EcoFone 2.png" alt="">
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="widthImg">
-                <img src="img/EcoFone 2.png" alt="">
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="widthImg">
-                <img src="img/EcoFone 2.png" alt="">
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="widthImg">
-                <img src="img/EcoFone 2.png" alt="">
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="widthImg">
-                <img src="img/EcoFone 2.png" alt="">
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="widthImg">
-                <img src="img/EcoFone 2.png" alt="">
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="widthImg">
-                <img src="img/EcoFone 2.png" alt="">
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="widthImg">
-                <img src="img/EcoFone 2.png" alt="">
-              </div>
-            </div>
           </div>
         </div>
       </div>
 
-      <button class="btn-compra">Mostra mais</button>
+      <button type="button" class="btn btn-light">Light</button>
     </section>
 
     <section class="card-braek">
@@ -330,7 +411,7 @@
     <section class="card-braek">
       <img src="img/xiaomi-12s-ultra-4.jpg" alt="">
     </section>
-    
+
     <section class="card-descricao">
       <div>
         <div>
