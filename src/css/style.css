@@ -1,0 +1,203 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+    :root {
+      --color-bg-site: linear-gradient(rgb(0, 0, 0), #2646af, black);
+      --color-bg-article: #0d1019;
+      --color-fontes: white;
+
+      --font-titulos: "Oswald", sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        position: absolute;
+        z-index: 2;
+        top: 5%;
+        left: 50%;
+        width: 85%;
+        transform: translate(-50%, -50%);
+    }
+    
+
+    header.rolagem{
+      background-color: var(--color-bg-article);
+      position: fixed;
+      width: 100%;
+      height: 11%;
+      display: flex;     
+      padding-left: 7.5%;
+    }
+
+    header.rolagem > .navbar{
+        width: 91.89%;
+    }
+
+    .card-mini-btn-compra{
+        width: 140px;
+    }
+      
+    .bg-dark {
+        background-color: transparent !important;
+    }
+
+    .nav-link { 
+        text-decoration: none;
+        color: var(--color-fontes);
+    }
+
+    main {
+        min-width: 300px;
+        background: var(--color-bg-site);
+    }
+  
+    video {
+       width: 100%;
+       box-shadow: -2px 1px 4px black;
+    }
+
+    .card-inicial {
+      position: relative;
+      margin-bottom: 5rem;
+    }
+  
+    .text {
+      position: absolute;
+      left: 50%;
+      top: 75%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .text>h1 {
+      color: white;
+      font-family: var(--font-titulos);
+      font-size: 3rem;
+      font-weight: bolder;
+      text-align: center;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
+    }
+  
+      .big-h2 {
+        width: 600px;
+        font-size: 2.2rem;
+      }
+  
+      .card-future {
+        padding: 1rem;
+      }
+  
+      .card-future>h2 {
+        font-size: 3rem;
+        font-weight: bolder;
+        font-family: var(--font-titulos);
+        text-transform: uppercase;
+      }
+        
+        .card{
+        background-color: #0d1019;
+        width: 500px;
+        height: 530px;
+        border-radius: 20px;
+      }
+
+      .card>h4 {
+        font-size: 2rem;
+        font-weight: bolder;
+        font-family: var(--font-titulos);
+        color: var(--color-fontes);
+        padding: 1rem .5rem;
+      }
+  
+      .card>p {
+        line-height: 1;
+        margin: 0;
+        font-size: 1.3rem;
+        font-weight: 500;
+        padding: 0 .5rem;
+        color: var(--color-fontes);
+      }
+      .card > p:last-child{
+        margin-top: 1.5rem;
+      }
+
+      .card> p > .subdescricao{
+        font-size: 1rem;
+        font-weight: 200;
+      }
+      
+      .card > p > .negrito {
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+  
+      .image-processador {
+        background-image: url('../img/processador.png');
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        margin: .5rem auto;
+        border-radius: 20px;
+      }
+  
+      .image-camera {
+        background-image: url('../img/camera.png');
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        margin: .5rem auto;
+        border-radius: 20px;
+      }
+  
+      .image-bateria {
+        background-image: url('../img/bateria.png');
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        margin: .5rem auto;
+        border-radius: 20px;
+      }
+
+      .card-braek {
+        margin-top: 2rem;
+        background-color: var(--color-bg-article);
+      }
+  
+      .card-braek>h2 {
+        color: var(--color-fontes);
+        text-align: center;
+        font-family: var(--font-titulos);
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 5rem;
+      }
+
+      .card-break-img-bio{
+        background-color: #1a1a1a;
+        max-width: 80vw;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto 10rem;
+        border: 20px;
+        padding: 2rem;
+        border-radius: 50px;
+        box-shadow: 3px 3px 3px rgb(26, 26, 26);
+      }
+
+      .card-break-text > h4{
+        color: var(--color-fontes);
+      }
+
+      .card-break-text > p{
+        margin-bottom: 3rem;
+        color: var(--color-fontes);
+      } 

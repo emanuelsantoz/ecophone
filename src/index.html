@@ -15,81 +15,25 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
+  <link rel="stylesheet" href="css/media-query.css">
+  <link rel="stylesheet" href="css/style.css">
+
 
 
 
   <style>
-    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
-    :root {
-      --color-bg-site: linear-gradient(white, #2646af, black);
-      --color-fontes: white;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    header {
-      position: absolute;
-      z-index: 2;
-      top: 5%;
-      left: 50%;
-      width: 85%;
-      transform: translate(-50%, -50%);
-    }
-
-    .bg-dark {
-      background-color: transparent !important;
-    }
-
-    .nav-link {
-      text-decoration: none;
-      color: var(--color-fontes);
-    }
-
-    main {
-      min-width: 300px;
-      background: var(--color-bg-site);
-    }
-
-    video {
-      width: 100%;
-      box-shadow: -2px 1px 4px black;
-    }
-
-    .card-inicial {
-      position: relative;
-      margin-bottom: 5rem;
-    }
-
-    .text {
-      position: absolute;
-      left: 50%;
-      top: 75%;
-      transform: translate(-50%, -50%);
-    }
-
-    .text>h1 {
+    .card-inicial.text>p {
       color: white;
       text-align: center;
       text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
     }
-
-    .text>p {
-      color: white;
-      text-align: center;
-      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
-    }
-
 
     .card-inova {
+      margin-top: 5rem;
       height: 100%;
       box-shadow: 3px 2px 2px black;
       padding: 3rem;
+      background-color: #0d1019;
     }
 
     .card-inova>h2 {
@@ -167,6 +111,7 @@
       height: 300px;
       margin-bottom: 2rem;
     }
+
     .swiper-wrapper {
       margin: 0 0 .5rem 0;
     }
@@ -183,14 +128,14 @@
       padding: .7rem 1rem .3rem;
     }
 
-    .widthImg>h4{
+    .widthImg>h4 {
       font-weight: 500;
-    } 
-    
+    }
+
     .widthImg>p {
       font-weight: 100;
       font-size: .8rem;
-      min-width: 50px;;
+      min-width: 50px;
     }
 
     .card-categoria>button {
@@ -199,10 +144,6 @@
       margin: 0 auto;
       border: none;
     }
-
-
-    
-
 
     .card-bateria {
       display: flex;
@@ -241,11 +182,10 @@
       padding: 1.5rem;
     }
   </style>
-
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
@@ -265,6 +205,11 @@
               <a class="nav-link links-header" href="#">Disabled</a>
             </li>
           </ul>
+        </div>
+
+        <div class="d-flex card-mini-btn-compra justify-content-between align-items-center">
+          <p class="m-0">1550</p>
+          <button class="btn btn-primary" type="submit">Comprar</button>
         </div>
       </div>
     </nav>
@@ -288,47 +233,83 @@
     </section>
 
 
-    <!--Finalizado Novas tecnologias-->
-    <section class="card-inova text-center">
-      <h2>Nova tecnologia</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
-      </p>
-      <div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <div class="body-link">
-              <i class="bi bi-droplet fs-2"></i>
-            </div>
-            <h4>A prova d'água</h4>
-            <p>Há uma saída para a projeto de video e imagens, dessa forma não dependendo mais de uma estrutura unica
-              para reproduzir, videos, filmes e apresentações, Lorem, ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="col-md-4">
-            <div id="projetor">
-              <i class="bi bi-camera2 fs-1"></i>
-              <i class="bi bi-projector fs-1"></i>
-            </div>
-            <h4>Projetor</h4>
-            <p>Há uma saída para a projeto de video e imagens, dessa forma não dependendo mais de uma estrutura unica
-              para reproduzir, videos, filmes e apresentações, Lorem, ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="col-md-4">
-            <div class="body-link">
-              <i class="bi bi-recycle fs-2"></i>
-            </div>
+    <!--Finalizado Futuro-->
+    <section class="text-center card-future" style="color: rgb(255, 255, 255);">
+      <h2 class="text-start mb-4">O novo futuro</h2>
 
-            <h4>Biodegradavel</h4>
-            <p>A bateria é produzida com materias Biodegradaveis, Lorem, ipsum dolor sit amet consectetur adipisicing
-              elit. Doloremque distinctio voluptatem dolor.</p>
-          </div>
+      <div class="row text-start d-flex justify-content-evenly p-1">
+        <div class="card">
+          <div class="image-processador"></div>
+          <h4>Snapdragon® 8+ Gen 1</h4>
+          <p>Armazenamento: <strong class="negrito">512 GB</strong> </p>
+          <p>Memória Ram: <strong>16 GB</strong> </p>
+        </div>
+        <div class="card">
+
+          <div class="image-camera"></div>
+
+          <h4>Cameras Lentes</h4>
+          <p>Principal: <strong class="negrito">50MP</strong> <br />
+            <span class="subdescricao">Lente 84,7° | Abertura f/1,68</span>
+          </p>
+
+          <p>Frontal: <strong class="negrito">100MP</strong> <br />
+            <span class="subdescricao">Lente 89,3° | Abertura f/1,95 | Auto Foco</span>
+          </p>
+        </div>
+        <div class="card">
+
+          <div class="image-bateria"></div>
+
+          <h4>Bateria Biodegradavel</h4>
+          <p>
+            Carregador Turbo <strong class="negrito"> PowerTurbo 130W</strong></span>
+          </p>
+          <p> <span class="subdescricao">Em apenas 10 minutos de carga</span></strong></p>
         </div>
       </div>
-
     </section>
 
-    <!--Desenvolver uma imagem -->
+    <div class="d-flex w-100" style="color: rgb(255, 255, 255);">
+      <p class="brmotorolanew-motorola-marketing-components-3ArvYea-k94JzymSss0fda">FICHA TÉCNICA COMPLETA </p>
+      <div>
+        <img src="https://brmotorolanew.vtexassets.com/arquivos/chevron-right.png">
+      </div>
+    </div>
+
+    <!--Finalizado Novas tecnologias-->
     <section class="card-braek">
-      <img src="img/foto.png" alt="">
+      <h2>"Já imaginou ter um celular composto por bateria Biodegradavel?"</h2>
+      <div class="card-break-img-bio">
+        <div class="card-break-text">
+          <h4>Como funciona a bateria biodegradavel </h4>
+          <p>A bateria biodegradável gera eletricidade através de reações químicas entre seus eletrodos. Entre o ânodo e
+            o cátodo, uma tela de celulose com hidrogel separa os polos. Feita com materiais naturais, como celulose e
+            metais não tóxicos, ela se dissolve facilmente no ambiente, sendo ecologicamente correta.</p>
+        </div>
+        <img src="img/bateria-bio.png" alt="">
+      </div>
+
+
+      <div class="d-flex  justify-content-around align-items-center" style="color: rgb(255, 255, 255);">
+        <div class="d-flex justify-content-between flex-column" style="height:450px">
+          <div>
+            <h4>Qualidade profissional</h4>
+            <p>O resultado de vários métodos de captura é combinado para produzir o máximo de qualidade.</p>
+          </div>
+
+          <h2 class="big-h2">Qualidade profissional. Nem precisa ser profissional.</h2>
+        </div>
+        <img src="https://brmotorolanew.vtexassets.com/arquivos/velar-img7.png" alt="">
+      </div>
+
+      <!--Desenvolver uma imagem -->
+      <div>
+        <img src="img/xiaomi-12s-ultra-4.jpg.png" alt="">
+      </div>
+      <div>
+        <img src="img/camera.png" alt="">
+      </div>
     </section>
 
     <!--  -->
@@ -343,11 +324,11 @@
               <div class="widthImg">
                 <img src="img/EcoFone 2.png" alt="">
                 <h4>Telefone &<br>
-                acessorios</h4>
+                  acessorios</h4>
                 <p>Acessorios que acompanham junto com a caixa do celuluar</p>
               </div>
             </div>
-            
+
 
 
           </div>

@@ -74,3 +74,9 @@ function init() {
             </div>`
     };
 }
+
+window.addEventListener("scroll", function (){
+    var headerHtml = window.document.querySelector('#header');
+    headerHtml.classList.toggle('rolagem', window.scrollY > 0);
+    console.log(window.scrollY);
+});
