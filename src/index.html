@@ -192,17 +192,17 @@
           aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand me-4" href="#">Navbar</a>
+        <a class="navbar-brand me-4" href="#">Ecophone</a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item me-4">
               <a class="nav-link active links-header" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link links-header" href="#">Link</a>
+              <a class="nav-link links-header" href="#">O que</a>
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link links-header" href="#">Disabled</a>
+              <a class="nav-link links-header" href="#">Projetor</a>
             </li>
           </ul>
         </div>
@@ -217,7 +217,7 @@
 
   <main>
     <!--Finalizado Big Video-->
-    <section class="card-inicial">
+    <section class="card-inicial" id="home">
       <div class="text">
         <h1>
           Bem vindo ao futuro
@@ -232,12 +232,11 @@
       </video>
     </section>
 
-
     <!--Finalizado Futuro-->
-    <section class="text-center card-future" style="color: rgb(255, 255, 255);">
+    <section id="nov" class="text-center card-future" style="color: rgb(255, 255, 255);">
       <h2 class="text-start mb-4">O novo futuro</h2>
 
-      <div class="row text-start d-flex justify-content-evenly p-1">
+      <div class="card-futuro text-start d-flex justify-content-evenly p-1">
         <div class="card">
           <div class="image-processador"></div>
           <h4>Snapdragon® 8+ Gen 1</h4>
@@ -245,9 +244,7 @@
           <p>Memória Ram: <strong>16 GB</strong> </p>
         </div>
         <div class="card">
-
           <div class="image-camera"></div>
-
           <h4>Cameras Lentes</h4>
           <p>Principal: <strong class="negrito">50MP</strong> <br />
             <span class="subdescricao">Lente 84,7° | Abertura f/1,68</span>
@@ -258,9 +255,7 @@
           </p>
         </div>
         <div class="card">
-
           <div class="image-bateria"></div>
-
           <h4>Bateria Biodegradavel</h4>
           <p>
             Carregador Turbo <strong class="negrito"> PowerTurbo 130W</strong></span>
@@ -278,7 +273,7 @@
     </div>
 
     <!--Finalizado Novas tecnologias-->
-    <section class="card-braek">
+    <section id="sobre" class="card-braek">
       <h2>"Já imaginou ter um celular composto por bateria Biodegradavel?"</h2>
       <div class="card-break-img-bio">
         <div class="card-break-text">
@@ -290,7 +285,7 @@
         <img src="img/bateria-bio.png" alt="">
       </div>
 
-
+      <h2>Veja o verdadeiro poder das cameras!</h2>
       <div class="d-flex  justify-content-around align-items-center" style="color: rgb(255, 255, 255);">
         <div class="d-flex justify-content-between flex-column" style="height:450px">
           <div>
@@ -303,18 +298,41 @@
         <img src="https://brmotorolanew.vtexassets.com/arquivos/velar-img7.png" alt="">
       </div>
 
-      <!--Desenvolver uma imagem -->
-      <div>
-        <img src="img/xiaomi-12s-ultra-4.jpg.png" alt="">
+      <div class="card-video-zoom d-flex  justify-content-around align-items-center" style="color: rgb(255, 255, 255);">
+        <div>
+          <video autoplay loop class="video-zoom">
+            <source src="video/videoplayback.mp4">
+          </video>
+        </div>
+        
+        <div style="height:450px">
+          <div class="card-zoom-text">
+            <h4>Até 120X</h4>
+            <p>O resultado de vários métodos de captura é combinado para produzir o máximo de qualidade.</p>
+          </div>
+
+          <h2 class="big-h2">O zoom que você sempre sonho na palma da sua mão</h2>
+        </div>
       </div>
-      <div>
-        <img src="img/camera.png" alt="">
+
+      <!--Desenvolver uma imagem -->
+      <h2>"Já viu um celular que projeta imagens na parede?"</h2>
+
+      <div class="card-projetor">
+        <img src="img/ecophone-projetor.png" alt="">
+        <div class="text-flutuante">
+          <h4>Projetor de imagens</h4>
+          <p>Além da camera de alta resolução, o Ecophone conta com uma tecnologia unica de reprodução de videos.
+            <br>Apelidamos esse modo de <strong>"Modo Projetor"</strong>, esse modo dentro de um ambiente com baixa
+            luminosidade é possivel, projetar qualquer imagen, desde um video no youtube, até um powerpoint
+          </p>
+        </div>
       </div>
     </section>
-
-    <!--  -->
+    
+    <!-- O que vem na caixa
     <section class="card-categoria">
-      <h2>Informações</h2>
+      <h2>Acessorios que vem na caixa</h2>
 
       <div class="container-carrossel">
         <div class="swiper">
@@ -329,65 +347,13 @@
               </div>
             </div>
 
-
-
           </div>
         </div>
       </div>
 
-      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-light">Comprar</button>
     </section>
 
-    <section class="card-braek">
-      <img src="img/xiaomi-12s-ultra-4.jpg" alt="">
-    </section>
-
-    <section class="">
-      <h2>Futuro</h2>
-
-      <div class="d-flex justify-content-evenly">
-        <div class="bateria">
-
-          <div class="card-segundo-video">
-            <video autoplay>
-              <source src="video/videoplayback.mp4">
-            </video>
-
-          </div>
-
-          <div class="card-bateria-text">
-            <h4>O que há por tras do eco fone?</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quibusdam neque quo iusto ad ipsa
-              exercitationem, optio eos magni a doloremque? Hic officiis, cumque quidem dolorem totam maiores iste
-              culpa.
-            </p>
-          </div>
-        </div>
-
-
-        <div class="bateria">
-          <div class="card-img"><img src="img/ecophone-inside.png" alt=""></div>
-          <div class="card-bateria-text">
-            <h4>O que há por tras do eco fone?</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quibusdam neque quo iusto ad ipsa
-              exercitationem, optio eos magni a doloremque? Hic officiis, cumque quidem dolorem totam maiores iste
-              culpa.
-            </p>
-          </div>
-        </div>
-
-        <div class="bateria">
-          <div class="card-img"><img src="img/ecophone-inside.png" alt=""></div>
-          <div class="card-bateria-text">
-            <h4>O que há por tras do eco fone?</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quibusdam neque quo iusto ad ipsa
-              exercitationem, optio eos magni a doloremque? Hic officiis, cumque quidem dolorem totam maiores iste
-              culpa.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="card-braek">
       <img src="img/xiaomi-12s-ultra-4.jpg" alt="">
@@ -401,14 +367,12 @@
         </div>
       </div>
       <div><img src="img/EcoFone 2.png" alt=""></div>
-    </section>
+    </section> -->
   </main>
 
   <footer class="blog-footer">
     <p>Desenvolvido pelo grupo do Legionarios Ecophone</p>
   </footer>
-
-
 
   <!-- Scripts -->
   <script src="js/script.js"></script>

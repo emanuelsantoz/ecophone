@@ -66,7 +66,7 @@ function init() {
     for(var i=0;i < carrosselInformacoesJson.length ; i++){
         pegarCarrossel.innerHTML += `<div class="swiper-slide text-center">
               <div class="widthImg">
-                <img src="img/EcoFone 2.png" alt="">
+                <img src="img/foto.png" alt="">
                 <h4>Test<br>
                 acessorios</h4>
                 <p>Acessorios que acompanham junto com a caixa do celuluar</p>
