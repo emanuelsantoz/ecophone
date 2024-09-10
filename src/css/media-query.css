@@ -49,6 +49,26 @@
    .card-break-img-bio > img{
     width: 250px;
    }
+
+   .fotos{
+    display: block;
+   }
+
+   .foto-text{
+    padding: 2rem;
+   }
+
+   .foto-texts{
+    height: 250px
+   }
+
+   .fotos > img{
+    width: 100vw;
+   }
+
+   .big-h2{
+    display: none;
+   }
 }
 
 

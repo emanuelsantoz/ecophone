@@ -290,4 +290,12 @@
         transform: translateY(0);
       }
 
+      .fotos{
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+      } 
       
+      .foto-texts{
+        height:450px;
+      }
