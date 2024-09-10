@@ -1,82 +1,103 @@
-var pegarCarrossel = window.document.getElementById("carrosselInformacoes");
+// var pegarCarrossel = window.document.getElementById("carrosselInformacoes");
 
-  const swiper = new Swiper('.swiper', {
-     speed: 400,
-     spaceBetween: 100,
-     slidesPerView: 5,
-     loop: true,
-     navigation: {
-         nextEl: '.swiper-button-next',
-         prevEl: '.swiper-button-prev',
-     },
+//   const swiper = new Swiper('.swiper', {
+//      speed: 400,
+//      spaceBetween: 100,
+//      slidesPerView: 5,
+//      loop: true,
+//      navigation: {
+//          nextEl: '.swiper-button-next',
+//          prevEl: '.swiper-button-prev',
+//      },
 
-     pagination: {
-         el: '.swiper-pagination',
-     },
+//      pagination: {
+//          el: '.swiper-pagination',
+//      },
 
-     scrollbars: {
-         el: '.swiper-scrollbar',
-         draggable: false,
-     },
+//      scrollbars: {
+//          el: '.swiper-scrollbar',
+//          draggable: false,
+//      },
 
-     breakpoints: {
-         320: {
-             slidesPerView: 1,
+//      breakpoints: {
+//          320: {
+//              slidesPerView: 1,
 
-         },
-         480: {
-             slidesPerView: 2,
+//          },
+//          480: {
+//              slidesPerView: 2,
 
-         },
-         640: {
-             slidesPerView: 3,
+//          },
+//          640: {
+//              slidesPerView: 3,
 
-         },
-         768: {
-             slidesPerView: 4,
+//          },
+//          768: {
+//              slidesPerView: 4,
 
-         },
-         992: {
-             slidesPerView: 5,
+//          },
+//          992: {
+//              slidesPerView: 5,
 
-         },
-         1200: {
-             slidesPerView: 5,
+//          },
+//          1200: {
+//              slidesPerView: 5,
 
-         },
-         1440: {
-             slidesPerView: 7,
-            spaceBetween: 1
-        }
-   },
-});
-
-
-var carrosselInformacoesJson = [
-    { title: 'Rangnarok', foto: 'img/avatar1.png' },
-    { title: 'Loki', foto: 'img/avatar2.png' },
-    { title: 'One Piece', foto: 'img/avatar3.png' },
-];
+//          },
+//          1440: {
+//              slidesPerView: 7,
+//             spaceBetween: 1
+//         }
+//    },
+// });
 
 
-onload = init();
+// var carrosselInformacoesJson = [
+//     { title: 'Rangnarok', foto: 'img/avatar1.png' },
+//     { title: 'Loki', foto: 'img/avatar2.png' },
+//     { title: 'One Piece', foto: 'img/avatar3.png' },
+// ];
 
-function init() {
-    console.log(pegarCarrossel)
-    for(var i=0;i < carrosselInformacoesJson.length ; i++){
-        pegarCarrossel.innerHTML += `<div class="swiper-slide text-center">
-              <div class="widthImg">
-                <img src="img/foto.png" alt="">
-                <h4>Test<br>
-                acessorios</h4>
-                <p>Acessorios que acompanham junto com a caixa do celuluar</p>
-              </div>
-            </div>`
-    };
-}
+
+// onload = init();
+
+// function init() {
+//     console.log(pegarCarrossel)
+//     for(var i=0;i < carrosselInformacoesJson.length ; i++){
+//         pegarCarrossel.innerHTML += `<div class="swiper-slide text-center">
+//               <div class="widthImg">
+//                 <img src="img/foto.png" alt="">
+//                 <h4>Test<br>
+//                 acessorios</h4>
+//                 <p>Acessorios que acompanham junto com a caixa do celuluar</p>
+//               </div>
+//             </div>`
+//     };
+// }
 
 window.addEventListener("scroll", function (){
     var headerHtml = window.document.querySelector('#header');
     headerHtml.classList.toggle('rolagem', window.scrollY > 0);
     console.log(window.scrollY);
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const fadeElements = document.querySelectorAll('.fade-in');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible'); // Remove a classe quando sair da tela
+        }
+      });
+    }, {
+      threshold: 0.1 // 10% do elemento visível
+    });
+  
+    fadeElements.forEach(element => {
+      observer.observe(element);
+    });
+  });

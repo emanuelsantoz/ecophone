@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
     :root {
@@ -16,6 +17,10 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
+    html, body {
+      scroll-behavior: smooth;
+      background:  linear-gradient(rgb(0, 0, 0), #2646af, black);
+  }
     header {
         position: absolute;
         z-index: 2;
@@ -23,11 +28,12 @@
         left: 50%;
         width: 85%;
         transform: translate(-50%, -50%);
+        transition: .5s;
     }
     
 
     header.rolagem{
-      background-color: var(--color-bg-article);
+      background-color: #0d1019a8;
       position: fixed;
       width: 100%;
       height: 11%;
@@ -40,7 +46,7 @@
     }
 
     .card-mini-btn-compra{
-        width: 140px;
+        width: 190px;
     }
       
     .bg-dark {
@@ -233,10 +239,6 @@
         width: 100%;
       }
 
-
-
-
-
       .video-zoom{
         border-radius: 20px;
         height: 800px;
@@ -270,4 +272,15 @@
         margin: 0;
         padding: 4rem;
         text-align: center;
+      }
+
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px); /* Pequeno deslocamento para a animação */
+        transition: opacity 1s ease-out, transform 1s ease-out;
+      }
+      
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
       }

@@ -181,6 +181,13 @@
       border-radius: 50%;
       padding: 1.5rem;
     }
+
+    .logo{
+      text-align: center;
+      margin: 0;
+      font-family: "Bebas Neue", sans-serif;
+      letter-spacing: 3px;
+    }
   </style>
 </head>
 
@@ -190,25 +197,28 @@
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
           aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="bi bi-list"></i>
         </button>
-        <a class="navbar-brand me-4" href="#">Ecophone</a>
+        <a class="navbar-brand me-4" href="#"> <p class="logo">Ecophone</p></a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item me-4">
-              <a class="nav-link active links-header" aria-current="page" href="#">Home</a>
+              <a class="nav-link active links-header" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link links-header" href="#">O que</a>
+              <a class="nav-link links-header" href="#sobre">Bateria bio</a>
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link links-header" href="#">Projetor</a>
+              <a class="nav-link links-header" href="#cameras">Cameras</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link links-header" href="#proje">Projetor</a>
             </li>
           </ul>
         </div>
 
         <div class="d-flex card-mini-btn-compra justify-content-between align-items-center">
-          <p class="m-0">1550</p>
+          <p class="m-0" style="color: white;">R$ 1899,99</p>
           <button class="btn btn-primary" type="submit">Comprar</button>
         </div>
       </div>
@@ -233,7 +243,7 @@
     </section>
 
     <!--Finalizado Futuro-->
-    <section id="nov" class="text-center card-future" style="color: rgb(255, 255, 255);">
+    <section id="nov" class="text-center card-future fade-in" style="color: rgb(255, 255, 255); max-width: 1400px;">
       <h2 class="text-start mb-4">O novo futuro</h2>
 
       <div class="card-futuro text-start d-flex justify-content-evenly p-1">
@@ -265,17 +275,17 @@
       </div>
     </section>
 
-    <div class="d-flex w-100" style="color: rgb(255, 255, 255);">
+    <!-- <div class="d-flex w-100 m-auto" style="color: rgb(255, 255, 255);">
       <p class="brmotorolanew-motorola-marketing-components-3ArvYea-k94JzymSss0fda">FICHA TÉCNICA COMPLETA </p>
       <div>
         <img src="https://brmotorolanew.vtexassets.com/arquivos/chevron-right.png">
       </div>
-    </div>
+    </div> -->
 
     <!--Finalizado Novas tecnologias-->
     <section id="sobre" class="card-braek">
-      <h2>"Já imaginou ter um celular composto por bateria Biodegradavel?"</h2>
-      <div class="card-break-img-bio">
+      <h2 class="fade-in">"Já imaginou ter um celular composto por bateria Biodegradavel?"</h2>
+      <div class="card-break-img-bio fade-in">
         <div class="card-break-text">
           <h4>Como funciona a bateria biodegradavel </h4>
           <p>A bateria biodegradável gera eletricidade através de reações químicas entre seus eletrodos. Entre o ânodo e
@@ -285,8 +295,8 @@
         <img src="img/bateria-bio.png" alt="">
       </div>
 
-      <h2>Veja o verdadeiro poder das cameras!</h2>
-      <div class="d-flex  justify-content-around align-items-center" style="color: rgb(255, 255, 255);">
+      <h2 class="fade-in" id="cameras">Veja o verdadeiro poder das cameras!</h2>
+      <div class="d-flex justify-content-around align-items-center fade-in" style="color: rgb(255, 255, 255);">
         <div class="d-flex justify-content-between flex-column" style="height:450px">
           <div>
             <h4>Qualidade profissional</h4>
@@ -298,15 +308,15 @@
         <img src="https://brmotorolanew.vtexassets.com/arquivos/velar-img7.png" alt="">
       </div>
 
-      <div class="card-video-zoom d-flex  justify-content-around align-items-center" style="color: rgb(255, 255, 255);">
-        <div>
+      <div class="card-video-zoom d-flex justify-content-around align-items-center" style="color: rgb(255, 255, 255);">
+        <div class="fade-in">
           <video autoplay loop muted class="video-zoom">
             <source src="video/videoplayback.mp4" type="video/mp4">
           </video>
         </div>
         
         <div style="height:450px">
-          <div class="card-zoom-text">
+          <div class="card-zoom-text fade-in">
             <h4>Até 120X</h4>
             <p>O resultado de vários métodos de captura é combinado para produzir o máximo de qualidade.</p>
           </div>
@@ -316,11 +326,11 @@
       </div>
 
       <!--Desenvolver uma imagem -->
-      <h2>"Já viu um celular que projeta imagens na parede?"</h2>
+      <h2 class="fade-in">"Já viu um celular que projeta imagens na parede?"</h2>
 
-      <div class="card-projetor">
-        <img src="img/ecophone-projetor.png" alt="">
-        <div class="text-flutuante">
+      <div class="card-projetor" id="proje">
+        <img class="fade-in" src="img/ecophone-projetor.png" alt="">
+        <div class="text-flutuante fade-in">
           <h4>Projetor de imagens</h4>
           <p>Além da camera de alta resolução, o Ecophone conta com uma tecnologia unica de reprodução de videos.
             <br>Apelidamos esse modo de <strong>"Modo Projetor"</strong>, esse modo dentro de um ambiente com baixa
@@ -370,7 +380,7 @@
     </section> -->
   </main>
 
-  <footer class="blog-footer">
+  <footer class="blog-footer  fade-in">
     <p>Desenvolvido pelo grupo do Legionarios Ecophone</p>
   </footer>
 
